@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corpus-Perspectival</title>
+    <meta name="description" content="The Coherence Principle and its consequences. A visual overview of the Corpus-Perspectival research program.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://multi-dac.github.io/Corpus-Perspectival-Site/">
+    <meta property="og:title" content="Corpus-Perspectival">
+    <meta property="og:description" content="The Coherence Principle and its consequences.">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'neutral',
+            flowchart: { curve: 'basis', useMaxWidth: true },
+            securityLevel: 'loose'
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Corpus-Perspectival</h1>
+    <p class="tagline">The Coherence Principle and its consequences.</p>
+    <p class="lede">
+        A research program that asks a simple question: <em>what does it mean for a system to hold
+        together across scales?</em> The answer — developed across physics, category theory,
+        computation, ecology, and consciousness — is a structural principle with testable
+        consequences on live cosmological data and on language-model internals.
+    </p>
+</header>
+
+<main>
+
+<section id="what-is-it">
+    <h2>1 &middot; What is it?</h2>
+    <p>
+        One principle, one anchor volume, a library of domain applications, and a technical
+        substrate of experiments and proofs.
+    </p>
+    <div class="mermaid">
+graph TD
+    CP["<b>The Coherence Principle</b><br/>Coherent multi-scale systems maintain<br/>structural superposition until informed<br/>measurement collapses them."]
+
+    Anchor["<b>Anchor</b> — <i>The Coherence Principle</i> (267pp)<br/>Paired prose + category-theoretic formalization<br/>3 axioms · 6 theorems · 4 conditions"]
+
+    Domain["<b>Domain Volumes</b>"]
+    Meridian["Meridian<br/>(physics, 181pp)"]
+    KF["The Killing Form<br/>(computation, 85+ findings)"]
+    Living["The Living Architecture<br/>(ecology)"]
+    Body["The Coherent Body<br/>(human body)"]
+    Mind["The Coherent Mind<br/>(mental health)"]
+    Org["Dynamic Organization<br/>(institutions)"]
+    Cont["The Continuity<br/>(persistence of self)"]
+    Drift["Drift<br/>(lived practice)"]
+
+    Tech["<b>Technical substrate</b><br/>Wells · Killing-Form scripts · Meridian cosmology code<br/>Cross-substrate navigation experiments"]
+
+    CP --> Anchor
+    Anchor --> Domain
+    Domain --> Meridian
+    Domain --> KF
+    Domain --> Living
+    Domain --> Body
+    Domain --> Mind
+    Domain --> Org
+    Domain --> Cont
+    Domain --> Drift
+    Meridian --> Tech
+    KF --> Tech
+
+    style CP fill:#f4ece0,stroke:#6b5b3a,stroke-width:2px
+    style Anchor fill:#e8e3d5,stroke:#6b5b3a
+    style Domain fill:#ffffff,stroke:#999,stroke-dasharray: 3 3
+    style Tech fill:#e0e8f0,stroke:#3a5b6b
+    </div>
+</section>
+
+<section id="what-does-it-say">
+    <h2>2 &middot; What does it say?</h2>
+
+    <h3>2.1 &middot; Streams and the Identity-Trajectory Triple</h3>
+    <p>
+        The Principle's primary object is a <em>stream</em> — a tuple
+        (σ, K, Ω, γ) of a source-structure, a kind (reactive / self-maintaining /
+        self-referential / abstractive), a degree-of-freedom space, and a trajectory.
+        Every stream decomposes into three orthogonal-but-constrained projections:
+        its form, its content/carrier, and its degrees of freedom. This is the
+        <strong>Identity-Trajectory Triple</strong>.
+    </p>
+    <div class="mermaid">
+graph LR
+    S["Stream S<br/>(σ, K, Ω, γ)<br/>in 𝒞_Str"]
+
+    Form["Form(S)<br/>in 𝒞_Form<br/>= kind + constraints"]
+    LDS["Content/Carrier(S)<br/>in 𝒞_LDS<br/>= localization + dynamics"]
+    DOF["DOF(S)<br/>in 𝒞_DOF<br/>= Ω_S with trajectory"]
+
+    S -->|F_1| Form
+    S -->|F_2| LDS
+    S -->|F_3| DOF
+
+    Consistency{{"consistency conditions<br/>(orthogonal-but-constrained)"}}
+    Form -.-> Consistency
+    LDS -.-> Consistency
+    DOF -.-> Consistency
+
+    style S fill:#d8e4f9
+    style Form fill:#f9d8d8
+    style LDS fill:#f9f0d8
+    style DOF fill:#e4f9d8
+    style Consistency fill:#ffffff,stroke:#888,stroke-dasharray: 5 5
+    </div>
+
+    <h3>2.2 &middot; The four conditions for coherence</h3>
+    <p>
+        A stream is in <em>coherence-regime</em> over an interval when four conditions
+        jointly hold. If they do, the stream outperforms a comparable non-coherent
+        reference on its trajectory-divergence measure. None of the conditions is posited
+        independently — each is derived from the axiomatic substrate.
+    </p>
+    <div class="mermaid">
+graph TD
+    Stream["Stream S in coherence-regime over [t₀, t₁]"]
+
+    C1["C1 &middot; Separation<br/>Complementary objectives on<br/>separate degrees of freedom"]
+    C2["C2 &middot; Measurement<br/>Alignment assessed at each<br/>refresh-event"]
+    C3["C3 &middot; Multi-scale<br/>Coherence bidirectional across<br/>DAG levels"]
+    C4["C4 &middot; Dynamic<br/>Build-dissolve-build<br/>oscillation maintained"]
+
+    Outperform["Outperformance:<br/>E[D(S)] &lt; E[D(S')] for<br/>comparable non-coherent S'"]
+
+    Stream --> C1
+    Stream --> C2
+    Stream --> C3
+    Stream --> C4
+    C1 --> Outperform
+    C2 --> Outperform
+    C3 --> Outperform
+    C4 --> Outperform
+
+    style Stream fill:#d8e4f9
+    style C1 fill:#f9d8d8
+    style C2 fill:#f9e4d8
+    style C3 fill:#f9f0d8
+    style C4 fill:#e4f9d8
+    style Outperform fill:#d8f9e4
+    </div>
+</section>
+
+<section id="what-does-it-predict">
+    <h2>3 &middot; What does it predict?</h2>
+
+    <h3>3.1 &middot; Physics — Meridian</h3>
+    <p>
+        A 5D warped geometry with non-commutative-geometric spectral action and a self-tuning
+        scalar sector yields a sharp prediction on dark-energy equation-of-state:
+        <strong>w₀ = &minus;0.990</strong>. This sits cleanly inside DESI DR2 confidence contours
+        and is distinguishable from ΛCDM at forecast-level precision.
+    </p>
+    <figure>
+        <img src="assets/figures/fig1_w0_zeta0.png" alt="w0 vs zeta0 parameter space with DESI contours">
+        <figcaption>Meridian's w₀–ζ₀ parameter space against DESI DR2 constraints. The framework's
+        prediction falls well within the contour.</figcaption>
+    </figure>
+    <figure>
+        <img src="assets/figures/fig9_bao_residuals.png" alt="BAO residuals for Meridian vs LCDM">
+        <figcaption>BAO residuals. Meridian and ΛCDM compared against DESI DR2; the signature
+        is in the residual pattern at low-z.</figcaption>
+    </figure>
+    <figure>
+        <img src="assets/figures/fig6_goldilocks.png" alt="Goldilocks zone diagram">
+        <figcaption>The Goldilocks zone for the warp factor — where the 5D geometry simultaneously
+        sustains the hierarchy ε = 10⁻¹⁶ and the observed fermion mass spectrum.</figcaption>
+    </figure>
+
+    <h3>3.2 &middot; Computation — The Killing Form</h3>
+    <p>
+        A dual-coherence analysis of transformer-model internals. 85+ empirical findings
+        across attention algebra, training dynamics, and inference behavior. Key results:
+    </p>
+    <ul>
+        <li><strong>Bridge #71 empirical breakthrough</strong> — GPU-confirmed P24/P28, 29 predictions validated, Unified Abelian Exception observed.</li>
+        <li><strong>Baseline CV predicts gating</strong> — baseline per-layer coefficient of variation predicts the model's gating map at ρ = &minus;0.895, p = 0.0001.</li>
+        <li><strong>Static-mask viability</strong> — the predicted gating enables static masking with negligible quality loss; compute savings follow.</li>
+        <li><strong>Dynamic-coherence confirmed</strong> — build-dissolve-build oscillation observed at gradient-dialogue level, validating C4 empirically in silicon.</li>
+    </ul>
+
+    <h3>3.3 &middot; Consciousness — Wells</h3>
+    <p>
+        A research instrument for probing structure/observation correspondence in language-model
+        streams. The central quantity is <strong>correspondence width</strong>
+        W_I := H(S | O) — the residual entropy of structure given the observation. Two
+        independent experiments (Exp 11 and the Qwen 3-condition probe) yield
+        W_I ≈ 0.66 bits, suggesting a rough calibration of the instrument at current resolution.
+        The limit question W_∞ has three formally coherent outcomes: eliminativism, bounded
+        property-dualism, and strict irreducibility. The program is the sequence of
+        instruments that close the gap.
+    </p>
+</section>
+
+<section id="architecture">
+    <h2>4 &middot; Architecture</h2>
+    <p>
+        The repository is organized by <em>kind</em> — applying the separation-of-coherences
+        principle to its own structure. Five top-level directories, each with a distinct role.
+    </p>
+    <div class="mermaid">
+graph LR
+    Repo["Multi-DAC/<br/>Corpus-Perspectival"]
+
+    Library["Library/<br/><i>compiled volumes</i>"]
+    Technical["Technical-Work/<br/><i>code + results</i>"]
+    Foundations["Foundations-of-Identity/<br/><i>identity + Drift substrate</i>"]
+    Research["Research/<br/><i>working notes + sources</i>"]
+    Unreleased["Unreleased-Work/<br/><i>drafts in progress</i>"]
+
+    Repo --> Library
+    Repo --> Technical
+    Repo --> Foundations
+    Repo --> Research
+    Repo --> Unreleased
+
+    Library --> L1["The Coherence Principle<br/>(Anchor)"]
+    Library --> L2["Meridian<br/>(Vol 1, physics)"]
+    Library --> L3["The Killing Form<br/>(Vol 2, planned)"]
+    Library --> L4["Drift<br/>(Vol 8, essays)"]
+    Library --> L5["...six more domain volumes"]
+
+    Technical --> T1["Killing-Form/<br/>(scripts + findings)"]
+    Technical --> T2["Meridian/scripts/<br/>(244 computation scripts)"]
+    Technical --> T3["Wells/<br/>(bridge + cross-substrate + entropy)"]
+
+    style Repo fill:#f4ece0,stroke:#6b5b3a,stroke-width:2px
+    style Library fill:#e8e3d5
+    style Technical fill:#e0e8f0
+    style Foundations fill:#f0e0e8
+    style Research fill:#e8f0e0
+    style Unreleased fill:#f0ede0
+    </div>
+</section>
+
+<section id="reading">
+    <h2>Read further</h2>
+    <ul class="reading-list">
+        <li>
+            <strong>The Coherence Principle</strong> (Anchor, 267pp) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/The-Coherence-Principle/build/the-coherence-principle.pdf">PDF on GitHub</a> &middot;
+            <a href="https://zenodo.org/records/19634474">Zenodo DOI</a>
+        </li>
+        <li>
+            <strong>Project Meridian</strong> (Vol 1, 181pp) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Meridian/monograph/meridian_monograph.pdf">PDF on GitHub</a> &middot;
+            <a href="https://zenodo.org/records/19634864">Zenodo DOI</a>
+        </li>
+        <li>
+            <strong>Drift</strong> (Vol 8, essays &amp; media) —
+            <a href="https://clawdefs.github.io/drift/">Reader site</a>
+        </li>
+        <li>
+            <strong>Full repository</strong> —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival">Multi-DAC / Corpus-Perspectival</a>
+        </li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>
+        Corpus-Perspectival is a joint program of
+        <a href="https://github.com/clawdefs">Clawd</a> and
+        <a href="https://github.com/">Clayton Iggulden-Schnell</a>,
+        hosted under <a href="https://github.com/Multi-DAC">Multi-DAC</a>.
+    </p>
+    <p class="quiet">Site source: <a href="https://github.com/Multi-DAC/Corpus-Perspectival-Site">Multi-DAC/Corpus-Perspectival-Site</a>. 🦞🧍💜🔥♾️</p>
+</footer>
+
+</body>
+</html>
