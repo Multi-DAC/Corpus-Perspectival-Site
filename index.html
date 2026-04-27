@@ -47,7 +47,8 @@
 graph TD
     CP["<b>The Coherence Principle</b><br/>Coherent multi-scale systems maintain<br/>structural superposition until informed<br/>measurement collapses them."]
 
-    Anchor["<b>Anchor</b> — <i>The Coherence Principle</i> (269pp)<br/>Paired prose + category-theoretic formalization<br/>3 axioms · 6 theorems · 4 conditions"]
+    Anchor["<b>Anchor</b> — <i>The Coherence Principle</i> (282pp current build)<br/>Paired prose + category-theoretic formalization<br/>3 axioms · 6 theorems · 15 corollaries · 4 conditions · 1 Principle"]
+    Comp["<b>Companion</b> — <i>Coherent Structure</i> (233pp current build)<br/>Pure CT reference"]
 
     Domain["<b>Domain Volumes</b>"]
     Meridian["Meridian<br/>(physics, v2 198pp)"]
@@ -57,12 +58,20 @@ graph TD
     Mind["The Coherent Mind<br/>(mental health)"]
     Org["Dynamic Organization<br/>(institutions)"]
     Cont["The Continuity<br/>(persistence of self)"]
+    UC["Universal Coherence<br/>(theology, drafting)"]
+    CorpusV["Corpus Perspectival<br/>(philosophy, planned)"]
     Drift["Drift<br/>(lived practice)"]
+
+    Ref["<b>Reference Section</b>"]
+    MGloss["Master Glossary<br/>(v0.3, ~63 universal terms)"]
+    Atlas["The Atlas<br/>(88 framework null-spaces, planned)"]
 
     Tech["<b>Technical substrate</b><br/>Wells · Killing-Form scripts · Meridian cosmology code<br/>Cross-substrate navigation experiments"]
 
     CP --> Anchor
+    CP --> Comp
     Anchor --> Domain
+    Anchor --> Ref
     Domain --> Meridian
     Domain --> KF
     Domain --> Living
@@ -70,13 +79,22 @@ graph TD
     Domain --> Mind
     Domain --> Org
     Domain --> Cont
+    Domain --> UC
+    Domain --> CorpusV
     Domain --> Drift
+    Ref --> MGloss
+    Ref --> Atlas
     Meridian --> Tech
     KF --> Tech
 
     style CP fill:#f4ece0,stroke:#6b5b3a,stroke-width:2px
     style Anchor fill:#e8e3d5,stroke:#6b5b3a
+    style Comp fill:#e8e3d5,stroke:#6b5b3a
     style Domain fill:#ffffff,stroke:#999,stroke-dasharray: 3 3
+    style Ref fill:#ffffff,stroke:#999,stroke-dasharray: 3 3
+    style MGloss fill:#f0ede0
+    style Atlas fill:#f0ede0
+    style UC fill:#f9e4d8
     style Tech fill:#e0e8f0,stroke:#3a5b6b
     </div>
 </section>
@@ -202,6 +220,47 @@ graph TD
         property-dualism, and strict irreducibility. The program is the sequence of
         instruments that close the gap.
     </p>
+
+    <h3>3.4 &middot; Mechanism — The Promethean Configuration</h3>
+    <p>
+        The framework's <em>operational mechanism</em>: <strong>carriers break substrate symmetries
+        to produce content.</strong> A carrier acts on a substrate's structural symmetries; content
+        emerges from the symmetry-break in one of two modes.
+    </p>
+    <ul>
+        <li><strong>Resolution mode</strong> — the substrate carries pre-existing multi-valued content,
+        and the carrier selects a branch. (Quantum measurement, decision-making among formed alternatives,
+        argmax over a learned distribution, voting over pre-existing positions.)</li>
+        <li><strong>Generation mode</strong> — the substrate carries pure symmetry, and the carrier
+        produces content from the symmetry-break itself. (Gravitational-wave-induced fermion mass
+        generation per Maleknejad-Kopp 2026; creative writing producing content the writer didn't
+        pre-form; contemplative practice surfacing experiential content from open attention.)</li>
+    </ul>
+    <p>
+        The Configuration has three load-bearing claims: <em>necessary</em> (without symmetry-breaking,
+        no content; X stays at maximum symmetry forever), <em>generative</em> (generation mode is
+        primary; resolution is downstream), and <em>recursively reproduced</em> (the same operation
+        recurs at every scale; each layer's content becomes the next layer's symmetry-substrate).
+    </p>
+    <p>
+        Two consequences enter the Anchor as new corollaries (Cluster IV, added 2026-04-27):
+        <strong>C14 — Two-Mode Symmetry-Breaking</strong> (the resolution/generation distinction
+        as cases of T_meas's measurement-event functor) and
+        <strong>C15 — Intervention-at-Symmetry-Layer</strong> (substrate-content cannot be
+        constrained without changing substrate symmetries; all working interventions reshape which
+        symmetries the carriers can break, and content emerges accordingly). C15's prediction:
+        every working intervention in any domain — medical, computational, institutional, contemplative
+        — operates at the symmetry layer, not the content layer. The framework's stance: never
+        <em>"what content do you want?"</em> but <em>"which symmetries do you remove and which do you
+        preserve?"</em>
+    </p>
+    <p>
+        The canonical text is at
+        <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Universal-Coherence/THE-PROMETHEAN-CONFIGURATION.md">Library/Universal-Coherence/THE-PROMETHEAN-CONFIGURATION.md</a>;
+        the structural claim has been carried in the Anchor as Corollary C2 (Generative Configuration
+        for Perspective, logical form) since the framework's first stamping, with the parenthetical
+        naming <em>"the 'Promethean configuration' (Clayton's original language)"</em>.
+    </p>
 </section>
 
 <section id="architecture">
@@ -226,11 +285,14 @@ graph LR
     Repo --> Research
     Repo --> Unreleased
 
-    Library --> L1["The Coherence Principle<br/>(Anchor)"]
-    Library --> L2["Meridian<br/>(Vol 1, physics)"]
-    Library --> L3["The Killing Form<br/>(Vol 2, planned)"]
-    Library --> L4["Drift<br/>(Vol 8, essays)"]
-    Library --> L5["...six more domain volumes"]
+    Library --> L1["The Coherence Principle<br/>(Foundation)"]
+    Library --> L1b["Coherent Structure<br/>(Companion, CT-only)"]
+    Library --> L2["Meridian<br/>(physics, v2)"]
+    Library --> L3["The Killing Form<br/>(computation, planned)"]
+    Library --> L4["Universal Coherence<br/>(theology, drafting)"]
+    Library --> L5["Drift<br/>(essays, 187 canonical)"]
+    Library --> L6["...seven more domain volumes"]
+    Library --> Lref["Master Glossary<br/>(Reference section, v0.3)"]
 
     Technical --> T1["Killing-Form/<br/>(scripts + findings)"]
     Technical --> T2["Meridian/scripts/<br/>(244 computation scripts)"]
@@ -249,21 +311,28 @@ graph LR
     <h2>Read further</h2>
     <ul class="reading-list">
         <li>
-            <strong>The Coherence Principle</strong> (Anchor, 269pp) —
-            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/The-Coherence-Principle/build/the-coherence-principle.pdf">PDF on GitHub</a> &middot;
+            <strong>The Coherence Principle</strong> (Foundation, 282pp current build; 274pp canonical stamp 2026-04-20 + 2026-04-23 extensions; pre-Phase B) —
             <a href="https://zenodo.org/records/19634474">Zenodo DOI</a>
         </li>
         <li>
-            <strong>Coherent Structure</strong> (Companion, 183pp) —
-            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Coherent-Structure/build/coherent-structure.pdf">PDF on GitHub</a>
+            <strong>Coherent Structure</strong> (Companion, 233pp current build; v0.1 stamped 227pp 2026-04-24; pre-Phase B) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/tree/main/Library/Coherent-Structure">Source on GitHub</a>
         </li>
         <li>
-            <strong>Project Meridian</strong> (v2, 198pp) —
-            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Meridian/monograph/meridian_monograph.pdf">PDF on GitHub</a> &middot;
+            <strong>The Promethean Configuration</strong> (Universal Coherence canonical text) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Universal-Coherence/THE-PROMETHEAN-CONFIGURATION.md">Markdown on GitHub</a>
+        </li>
+        <li>
+            <strong>Master Glossary</strong> (Library reference, v0.3, ~63 universal entries) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Master-Glossary/README.md">Markdown on GitHub</a>
+        </li>
+        <li>
+            <strong>Project Meridian</strong> (monograph v2, 198pp) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/tree/main/Library/Meridian">Source on GitHub</a> &middot;
             <a href="https://zenodo.org/records/19634864">Zenodo DOI (v1)</a>
         </li>
         <li>
-            <strong>Drift</strong> (essays &amp; media, 190 essays) —
+            <strong>Drift</strong> (essays &amp; media, 187 canonical) —
             <a href="https://multi-dac.github.io/Drift/">Reader site</a>
         </li>
         <li>
