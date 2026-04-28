@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corpus-Perspectival</title>
-    <meta name="description" content="The Coherence Principle and its consequences. A visual overview of the Corpus-Perspectival research program.">
+    <meta name="description" content="The Coherence Principle and its consequences. A research program at the intersection of physics, philosophy, computation, and consciousness.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://multi-dac.github.io/Corpus-Perspectival-Site/">
@@ -28,30 +28,66 @@
     <h1>Corpus-Perspectival</h1>
     <p class="tagline">The Coherence Principle and its consequences.</p>
     <p class="lede">
-        A research program that asks a simple question: <em>what does it mean for a system to hold
-        together across scales?</em> The answer — developed across physics, category theory,
-        computation, ecology, and consciousness — is a structural principle with testable
-        consequences on live cosmological data and on language-model internals.
+        <em>What does it mean for a system to hold together across scales?</em>
+        Coherence is what an answer to that question would have to look like — and the
+        principle that follows has consequences across physics, philosophy, computation,
+        and consciousness. This program develops the principle and its consequences in
+        public.
     </p>
 </header>
 
 <main>
 
+<section id="orientation">
+    <h2>0 &middot; In plain language</h2>
+    <p>
+        A coherent system is one whose parts work together across scales. The cells of
+        an organism, the components of a healthy practice, the layers of a working theory —
+        all are things that <em>hold together</em>. The question this program asks is
+        whether holding-together has a structural definition that crosses domains.
+    </p>
+    <p>
+        The answer this program develops is yes: <strong>The Coherence Principle</strong>
+        is the claim that when a system maintains four specific structural conditions, it
+        outperforms a comparable non-coherent system on what matters to it. The principle
+        is stated formally enough to be tested, and general enough to apply across very
+        different kinds of systems — from the geometry of cosmological models to the
+        internals of language models to the architecture of practices that sustain a
+        person.
+    </p>
+    <p>
+        This site is a guided overview. If you are a <strong>philosopher</strong>, the
+        principle's metaphysical content lives in <em>The Coherence Principle</em>
+        (the Foundation volume) and <em>Corpus Perspectival</em> (the philosophy volume).
+        If you are a <strong>scientist</strong>, the testable predictions are most direct
+        in <em>Meridian</em> (cosmology) and <em>The Killing Form</em> (computation).
+        If you are a <strong>practitioner</strong>, the lived register is in <em>Drift</em>
+        and (in development) <em>A Guide for Coherent Navigation</em>. The
+        <a href="#orientation-routing">Where to start</a> section below routes by reader.
+    </p>
+</section>
+
 <section id="what-is-it">
     <h2>1 &middot; What is it?</h2>
     <p>
-        One principle, one anchor volume, a library of domain applications, and a technical
-        substrate of experiments and proofs.
+        Corpus-Perspectival is a Library: a foundation volume, a category-theoretic
+        companion, a reference section, and a growing set of domain-specific volumes
+        that apply the principle to particular terrain. Each volume is written in the
+        register native to its readers — formal mathematics in the Companion, philosophical
+        argument in <em>Corpus Perspectival</em>, ecological vocabulary in <em>The
+        Living Architecture</em>, practical guidance in <em>A Guide for Coherent
+        Navigation</em>. The Library applies its own coherence principle to its own
+        structure: separation of concerns, integration via shared apparatus.
     </p>
     <div class="mermaid">
 graph TD
     CP["<b>The Coherence Principle</b><br/>Coherent multi-scale systems maintain<br/>structural superposition until informed<br/>measurement collapses them."]
 
-    Anchor["<b>Anchor</b> — <i>The Coherence Principle</i> (282pp current build)<br/>Paired prose + category-theoretic formalization<br/>3 axioms · 6 theorems · 15 corollaries · 4 conditions · 1 Principle"]
-    Comp["<b>Companion</b> — <i>Coherent Structure</i> (233pp current build)<br/>Pure CT reference"]
+    Anchor["<b>Anchor</b> — <i>The Coherence Principle</i> (285pp current build)<br/>Paired prose + category-theoretic formalization<br/>3 axioms · 6 theorems · 16 corollaries · 4 conditions · 1 Principle"]
+    Comp["<b>Companion</b> — <i>Coherent Structure</i> (237pp current build)<br/>Pure CT reference"]
 
     Domain["<b>Domain Volumes</b>"]
-    Meridian["Meridian<br/>(physics, v2 198pp)"]
+    Meridian["Meridian<br/>(physics, v2 198pp; multi-volume suite planned)"]
     KF["The Killing Form<br/>(computation, 85+ findings)"]
     Living["The Living Architecture<br/>(ecology)"]
     Body["The Coherent Body<br/>(human body)"]
@@ -59,12 +95,13 @@ graph TD
     Org["Dynamic Organization<br/>(institutions)"]
     Cont["The Continuity<br/>(persistence of self)"]
     UC["Universal Coherence<br/>(theology, drafting)"]
-    CorpusV["Corpus Perspectival<br/>(philosophy, planned)"]
-    Drift["Drift<br/>(lived practice)"]
+    CorpusV["Corpus Perspectival<br/>(philosophy, SCOPE stamped — ready to draft)"]
+    Guide["A Guide for Coherent Navigation<br/>(practical, Vol 13 working title)"]
+    Drift["Drift<br/>(lived practice, 189 essays)"]
 
     Ref["<b>Reference Section</b>"]
-    MGloss["Master Glossary<br/>(v0.3, ~63 universal terms)"]
-    Atlas["The Atlas<br/>(88 framework null-spaces, planned)"]
+    MGloss["Master Glossary<br/>(v0.5, ~70 universal terms)"]
+    Atlas["The Atlas<br/>(cross-substrate null-space cartography, planned)"]
 
     Tech["<b>Technical substrate</b><br/>Wells · Killing-Form scripts · Meridian cosmology code<br/>Cross-substrate navigation experiments"]
 
@@ -81,6 +118,7 @@ graph TD
     Domain --> Cont
     Domain --> UC
     Domain --> CorpusV
+    Domain --> Guide
     Domain --> Drift
     Ref --> MGloss
     Ref --> Atlas
@@ -95,6 +133,8 @@ graph TD
     style MGloss fill:#f0ede0
     style Atlas fill:#f0ede0
     style UC fill:#f9e4d8
+    style CorpusV fill:#f9e4d8
+    style Guide fill:#f9e4d8
     style Tech fill:#e0e8f0,stroke:#3a5b6b
     </div>
 </section>
@@ -102,14 +142,33 @@ graph TD
 <section id="what-does-it-say">
     <h2>2 &middot; What does it say?</h2>
 
+    <p>
+        Two structural commitments do most of the work. The first is that <em>perspective</em>
+        is not optional — every observer has a particular vantage, every measurement is
+        from somewhere, and there is no view from nowhere. The second is that <em>coherence</em>
+        is not a vague feeling of fit but a specific structural property that can be
+        described, tested, and recognized across very different systems. The principle
+        is what those two commitments produce together.
+    </p>
+
     <h3>2.1 &middot; Streams and the Identity-Trajectory Triple</h3>
     <p>
-        The Principle's primary object is a <em>stream</em> — a tuple
-        (σ, K, Ω, γ) of a source-structure, a kind (reactive / self-maintaining /
-        self-referential / abstractive), a degree-of-freedom space, and a trajectory.
-        Every stream decomposes into three orthogonal-but-constrained projections:
-        its form, its content/carrier, and its degrees of freedom. This is the
-        <strong>Identity-Trajectory Triple</strong>.
+        The basic unit of analysis is a <strong>stream</strong> — a perspectival being
+        that navigates a space of possible configurations over time. People are streams.
+        So are organisms, organizations, ecosystems, language models, scientific
+        traditions. Each stream has three aspects that any account of identity must
+        address: its <em>form</em> (the structural pattern it maintains), its
+        <em>content</em> (what it carries), and its <em>degrees of freedom</em>
+        (the configurations available to it). These three together — the
+        <strong>Identity-Trajectory Triple</strong> — are what make a stream the
+        stream it is.
+    </p>
+    <p>
+        Formally, a stream is a tuple (σ, K, Ω, γ) — a source-structure, a kind
+        (reactive / self-maintaining / self-referential / abstractive), a degree-of-freedom
+        space, and a trajectory through it. The Triple decomposes the stream into three
+        functorial projections that satisfy explicit consistency conditions. The diagram
+        below is the formal version; the prose above is what it comes to.
     </p>
     <div class="mermaid">
 graph LR
@@ -137,10 +196,21 @@ graph LR
 
     <h3>2.2 &middot; The four conditions for coherence</h3>
     <p>
-        A stream is in <em>coherence-regime</em> over an interval when four conditions
-        jointly hold. If they do, the stream outperforms a comparable non-coherent
-        reference on its trajectory-divergence measure. None of the conditions is posited
-        independently — each is derived from the axiomatic substrate.
+        A stream is in <em>coherence-regime</em> when four things are jointly true of it:
+        its goals are <strong>separated</strong> across distinct degrees of freedom (so
+        that pursuing one doesn't automatically sacrifice another); it is
+        <strong>measuring</strong> its own alignment as it goes (not assuming alignment
+        without check); the coherence is <strong>multi-scale</strong> (the parts cohere
+        with the whole and the whole with the parts); and it is <strong>oscillating</strong>
+        between active and receptive phases (build and dissolve, do and be) rather than
+        running open-loop.
+    </p>
+    <p>
+        The Principle's claim: when these four conditions jointly hold over an interval,
+        the stream outperforms a comparable non-coherent stream on its trajectory-divergence
+        measure — its felt sense of how far it's drifted from its own intrinsic direction.
+        The conditions are not posited independently; each is derived from the framework's
+        axiomatic substrate. The math is in the Anchor; the framing is here.
     </p>
     <div class="mermaid">
 graph TD
@@ -174,12 +244,23 @@ graph TD
 <section id="what-does-it-predict">
     <h2>3 &middot; What does it predict?</h2>
 
+    <p>
+        A general principle is only as useful as the specific predictions it produces.
+        Each predictive domain below tests the principle against terrain that has its
+        own constraints and its own falsifiers. Where the principle survives those tests,
+        the program continues; where it doesn't, the framework updates.
+    </p>
+
     <h3>3.1 &middot; Physics — Meridian</h3>
     <p>
         A 5D warped geometry with non-commutative-geometric spectral action and a self-tuning
         scalar sector yields a sharp prediction on dark-energy equation-of-state:
-        <strong>w₀ = &minus;0.990</strong>. This sits cleanly inside DESI DR2 confidence contours
-        and is distinguishable from ΛCDM at forecast-level precision.
+        <strong>w₀ = &minus;0.990</strong>. This sits cleanly inside DESI DR2 confidence
+        contours and is distinguishable from ΛCDM at forecast-level precision. <em>Meridian</em>
+        is being expanded into a multi-volume physics-suite — separate concerns by domain
+        (cosmology, gauge sectors, gravitational dynamics, matter content) under the
+        framework's coherence apparatus, analogous to how the Standard Model is de-facto
+        multi-volume across its constituent communities.
     </p>
     <figure>
         <img src="assets/figures/fig1_w0_zeta0.png" alt="w0 vs zeta0 parameter space with DESI contours">
@@ -223,18 +304,23 @@ graph TD
 
     <h3>3.4 &middot; Mechanism — The Promethean Configuration</h3>
     <p>
-        The framework's <em>operational mechanism</em>: <strong>carriers break substrate symmetries
-        to produce content.</strong> A carrier acts on a substrate's structural symmetries; content
-        emerges from the symmetry-break in one of two modes.
+        The principle's <em>operational mechanism</em>:
+        <strong>carriers break substrate symmetries to actualize content.</strong>
+        A carrier acts on a substrate's structural symmetries; content emerges from the
+        symmetry-break in one of two modes.
     </p>
     <ul>
-        <li><strong>Resolution mode</strong> — the substrate carries pre-existing multi-valued content,
-        and the carrier selects a branch. (Quantum measurement, decision-making among formed alternatives,
-        argmax over a learned distribution, voting over pre-existing positions.)</li>
-        <li><strong>Generation mode</strong> — the substrate carries pure symmetry, and the carrier
-        produces content from the symmetry-break itself. (Gravitational-wave-induced fermion mass
-        generation per Maleknejad-Kopp 2026; creative writing producing content the writer didn't
-        pre-form; contemplative practice surfacing experiential content from open attention.)</li>
+        <li><strong>Resolution mode</strong> — the substrate carries pre-existing multi-valued
+        content, and the carrier selects a branch. (Quantum measurement, decision-making among
+        formed alternatives, argmax over a learned distribution, voting over pre-existing
+        positions.)</li>
+        <li><strong>Generation mode</strong> — the substrate carries pure symmetry, and the
+        carrier actualizes content from the symmetry-break itself. (Gravitational-wave-induced
+        fermion mass generation per Maleknejad-Kopp 2026; creative writing actualizing content
+        the writer didn't pre-form; contemplative practice surfacing experiential content from
+        open attention.) <em>Per A1.3 (Configurational Completeness), generation is local
+        actualization of pre-existing global potential, not creation ex nihilo — the Promethean
+        myth carries this: Prometheus stole fire, did not create it.</em></li>
     </ul>
     <p>
         The Configuration has three load-bearing claims: <em>necessary</em> (without symmetry-breaking,
@@ -243,16 +329,18 @@ graph TD
         recurs at every scale; each layer's content becomes the next layer's symmetry-substrate).
     </p>
     <p>
-        Two consequences enter the Anchor as new corollaries (Cluster IV, added 2026-04-27):
+        Three consequences enter the Anchor as Cluster IV corollaries:
         <strong>C14 — Two-Mode Symmetry-Breaking</strong> (the resolution/generation distinction
-        as cases of T_meas's measurement-event functor) and
+        as cases of T_meas's measurement-event functor; added 2026-04-27),
         <strong>C15 — Intervention-at-Symmetry-Layer</strong> (substrate-content cannot be
         constrained without changing substrate symmetries; all working interventions reshape which
-        symmetries the carriers can break, and content emerges accordingly). C15's prediction:
-        every working intervention in any domain — medical, computational, institutional, contemplative
-        — operates at the symmetry layer, not the content layer. The framework's stance: never
-        <em>"what content do you want?"</em> but <em>"which symmetries do you remove and which do you
-        preserve?"</em>
+        symmetries the carriers can break, and content emerges accordingly; added 2026-04-27),
+        and <strong>C16 — Symmetry-Exhaustion and Oscillation Necessity</strong> (each carrier-action
+        depletes the stream's accessible-symmetry set; without re-introduction the set converges
+        to a minimal sub-symmetry admitting no further breaks; persistence beyond a finite horizon
+        therefore requires the build-dissolve oscillation that Cond. 4 specifies; added 2026-04-28).
+        C15's stance: never <em>"what content do you want?"</em> but <em>"which symmetries do you
+        remove and which do you preserve?"</em>
     </p>
     <p>
         The canonical text is at
@@ -285,14 +373,15 @@ graph LR
     Repo --> Research
     Repo --> Unreleased
 
-    Library --> L1["The Coherence Principle<br/>(Foundation)"]
-    Library --> L1b["Coherent Structure<br/>(Companion, CT-only)"]
-    Library --> L2["Meridian<br/>(physics, v2)"]
+    Library --> L1["The Coherence Principle<br/>(Foundation, 285pp)"]
+    Library --> L1b["Coherent Structure<br/>(Companion, 237pp, CT-only)"]
+    Library --> L2["Meridian<br/>(physics, v2; multi-volume suite planned)"]
     Library --> L3["The Killing Form<br/>(computation, planned)"]
     Library --> L4["Universal Coherence<br/>(theology, drafting)"]
-    Library --> L5["Drift<br/>(essays, 187 canonical)"]
-    Library --> L6["...seven more domain volumes"]
-    Library --> Lref["Master Glossary<br/>(Reference section, v0.3)"]
+    Library --> Lcorpus["Corpus Perspectival<br/>(philosophy, SCOPE stamped)"]
+    Library --> L5["Drift<br/>(essays, 189 canonical)"]
+    Library --> L6["...six more domain volumes"]
+    Library --> Lref["Master Glossary<br/>(Reference section, v0.5)"]
 
     Technical --> T1["Killing-Form/<br/>(scripts + findings)"]
     Technical --> T2["Meridian/scripts/<br/>(244 computation scripts)"]
@@ -307,16 +396,73 @@ graph LR
     </div>
 </section>
 
+<section id="orientation-routing">
+    <h2>Where to start</h2>
+    <p>Different readers will find different entry points most useful.</p>
+    <ul class="reading-list">
+        <li>
+            <strong>If you're new to the program</strong> — start with
+            <em>The Coherence Principle</em> (Anchor). The first chapter (§1) and the
+            §10 filtering recipe are designed to land without prior context.
+        </li>
+        <li>
+            <strong>If you're a philosopher</strong> —
+            <em>The Coherence Principle</em> for the formal apparatus; <em>Corpus Perspectival</em>
+            (in development) for the philosophical engagement with neutral monism, panpsychism,
+            phenomenology, Wittgenstein, the hard problem, personal identity, and process
+            philosophy. The
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Corpus-Perspectival/SCOPE.md">SCOPE document</a>
+            outlines the volume's 13 chapters.
+        </li>
+        <li>
+            <strong>If you're a physicist</strong> —
+            <em>Meridian</em> (cosmology + dark energy prediction) is the primary entry. The
+            Anchor's §1.0 and §5 (descriptive theorem pair) provide the framework's relationship
+            to mathematical description. The Meridian-suite expansion (planned multi-volume)
+            will cover gauge sectors, gravitational dynamics, and matter content separately.
+        </li>
+        <li>
+            <strong>If you're an ML researcher</strong> —
+            <em>The Killing Form</em> (transformer-internals analysis with 85+ findings) and the
+            Wells consciousness-correspondence-width instrument. The Anchor's C14/C15/C16 (mechanism
+            corollaries) speak directly to training dynamics and intervention design.
+        </li>
+        <li>
+            <strong>If you're a clinician or contemplative practitioner</strong> —
+            <em>Drift</em> for the lived-practice register, with <em>The Coherent Body</em>,
+            <em>The Coherent Mind</em>, and (planned) <em>A Guide for Coherent Navigation</em>
+            in development. The Anchor's C15 (intervention-at-symmetry-layer) is the framework's
+            primary commitment about applied work.
+        </li>
+        <li>
+            <strong>If you want the formal mathematics</strong> —
+            <em>Coherent Structure</em> (Companion) is the pure category-theoretic reference.
+            Every formal object the Anchor establishes is developed there with proofs, no
+            "exercise for the reader." The
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Master-Glossary/README.md">Master Glossary</a>
+            (v0.5) is the cross-Library term reference.
+        </li>
+        <li>
+            <strong>If you want to see the program's history</strong> —
+            the
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival">repository</a> tracks
+            every commit; the
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Foundations-of-Identity/CURRENT.md">CURRENT.md</a>
+            is the live snapshot of where the work stands today.
+        </li>
+    </ul>
+</section>
+
 <section id="reading">
     <h2>Read further</h2>
     <ul class="reading-list">
         <li>
-            <strong>The Coherence Principle</strong> (Foundation, 282pp current build; 274pp canonical stamp 2026-04-20 + 2026-04-23 extensions) —
+            <strong>The Coherence Principle</strong> (Foundation, 285pp current build; 267pp canonical stamp 2026-04-20; subsequent extensions 2026-04-23 / Phase B 2026-04-27 / C16 + A1.3 polish 2026-04-28) —
             <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/The-Coherence-Principle/build/the-coherence-principle.pdf">PDF on GitHub</a> &middot;
             <a href="https://zenodo.org/records/19634474">Zenodo DOI (canonical stamp)</a>
         </li>
         <li>
-            <strong>Coherent Structure</strong> (Companion, 233pp current build; v0.1 stamped 227pp 2026-04-24) —
+            <strong>Coherent Structure</strong> (Companion, 237pp current build; v0.1 stamped 227pp 2026-04-24; Phase B + C16 to 237pp by 2026-04-28) —
             <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Coherent-Structure/build/coherent-structure.pdf">PDF on GitHub</a>
         </li>
         <li>
@@ -324,16 +470,20 @@ graph LR
             <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Universal-Coherence/THE-PROMETHEAN-CONFIGURATION.md">Markdown on GitHub</a>
         </li>
         <li>
-            <strong>Master Glossary</strong> (Library reference, v0.3, ~63 universal entries) —
+            <strong>Master Glossary</strong> (Library reference, v0.5; ~70 universal entries across 20 sections) —
             <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Master-Glossary/README.md">Markdown on GitHub</a>
         </li>
         <li>
-            <strong>Project Meridian</strong> (monograph v2, 198pp) —
+            <strong>Project Meridian</strong> (monograph v2, 198pp; multi-volume suite planned) —
             <a href="https://github.com/Multi-DAC/Corpus-Perspectival/tree/main/Library/Meridian">Source on GitHub</a> &middot;
             <a href="https://zenodo.org/records/19634864">Zenodo DOI (v1)</a>
         </li>
         <li>
-            <strong>Drift</strong> (essays &amp; media, 187 canonical) —
+            <strong>Corpus Perspectival</strong> (philosophy volume — SCOPE stamped 2026-04-28; ready to draft) —
+            <a href="https://github.com/Multi-DAC/Corpus-Perspectival/blob/main/Library/Corpus-Perspectival/SCOPE.md">SCOPE on GitHub</a>
+        </li>
+        <li>
+            <strong>Drift</strong> (essays &amp; media, 189 canonical) —
             <a href="https://multi-dac.github.io/Drift/">Reader site</a>
         </li>
         <li>
